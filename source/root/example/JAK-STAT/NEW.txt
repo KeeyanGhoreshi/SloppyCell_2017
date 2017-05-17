@@ -1,0 +1,152 @@
+Parameter Estimation Task
+
+Problem Description:
+Subtask: 
+Steady-State Task
+
+Problem Description:
+    JacobianRequested: 1
+    StabilityAnalysisRequested: 1
+
+Method: Enhanced Newton
+    Resolution: 1e-009
+    Derivation Factor: 0.001
+    Use Newton: 1
+    Use Integration: 1
+    Use Back Integration: 1
+    Accept Negative Concentrations: 0
+    Iteration Limit: 50
+    Maximum duration for forward integration: 1e+009
+    Maximum duration for backward integration: 1e+006
+
+
+List of Fitting Items:
+    1e-06 <= Values[r1].InitialValue <= 1e+06; Start Value = 3.26263e-006
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    1e-06 <= Values[r3].InitialValue <= 1e+06; Start Value = 11527.4
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    1e-06 <= Values[tao].InitialValue <= 1e+06; Start Value = 10.5166
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    1e-06 <= Values[r4_0].InitialValue <= 1e+06; Start Value = 1e-006
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+    1e-06 <= Values[v1_0].InitialValue <= 1e+06; Start Value = 1.54319
+    Affected Experiments:
+      all    Affected Validation Experiments:
+      all
+
+Method: Levenberg - Marquardt
+    Iteration Limit: 2000
+    Tolerance: 1e-006
+
+[Function Evaluations]	[Best Value]	[Best Parameters]
+1	1.56533e+008	(	3.26263e-006	11527.4	10.5166	1e-006	1.54319	)
+43	2.78234e+007	(	4.96152e-006	11527.4	10.5166	1e-006	1.54319	)
+
+Parameter Estimation Result:
+
+Objective Function Value:	2.78234e+007
+Standard Deviation:	1015.13
+Function Evaluations:	157
+CPU Time [s]:	52.977
+Evaluations/Second [1/s]:	2.96355
+
+	Parameter	Value	Gradient	Standard Deviation
+	Values[r1].InitialValue:	4.96152e-006	3.44345e+017	1.#QNAN
+	Values[r3].InitialValue:	11527.4	3.00608e+007	1.#QNAN
+	Values[tao].InitialValue:	10.5166	0	1.#QNAN
+	Values[r4_0].InitialValue:	1e-006	-94711.8	1.#QNAN
+	Values[v1_0].InitialValue:	1.54319	0	1.#QNAN
+
+File Name:	C:/Users/vcguest/Desktop/Sloppy/Sloppy Cell Download/Example/JAK-STAT/data_expt1.txt
+Experiment:	Experiment
+Mean:	163.87
+Objective Value:	2.78234e+007
+Root Mean Square:	932.46
+Row	[data1](Data)	[data1](Fit)	[data1](Weighted Error)	[data2](Data)	[data2](Fit)	[data2](Weighted Error)	Objective Value	Root Mean Square
+
+1.	0	8.59501e-011	5274.79	1	8.59501e-011	-1	2.78234e+007	3729.84
+2.	0.16575	0.000769464	-0.995358	0.9275	0.00585029	-0.993692	1.97816	0.994525
+3.	0.43225	0.000768853	-0.998221	0.7923	0.00773023	-0.990243	1.97703	0.99424
+4.	0.48175	0.000769038	-0.998404	0.7778	0.00716019	-0.990794	1.97848	0.994606
+5.	0.46395	0.000767231	-0.998346	0.7053	0.012715	-0.981972	1.96096	0.990193
+6.	0.4081	0.000771005	-0.998111	0.6522	0.00110382	-0.998308	1.99284	0.998209
+7.	0.37765	2.5914e-010	-1	0.5894	2.5914e-010	-1	2	1
+8.	0.384	3.16581e-010	-1	0.5894	3.16581e-010	-1	2	1
+9.	0.4208	3.14284e-010	-1	0.6377	3.14284e-010	-1	2	1
+10.	0.384	2.82163e-010	-1	0.6425	2.82163e-010	-1	2	1
+11.	0.4005	3.15768e-010	-1	0.6908	3.15768e-010	-1	2	1
+12.	0.3916	2.92455e-010	-1	0.6908	2.92455e-010	-1	2	1
+13.	0.4043	9.85161e-011	-1	0.7585	9.85161e-011	-1	2	1
+14.	0.2444	2.57566e-010	-1	0.8068	2.57566e-010	-1	2	1
+15.	0.1391	3.25702e-010	-1	0.9275	3.25702e-010	-1	2	1
+16.	0.12765	2.72928e-010	-1	0.971	2.72928e-010	-1	2	1
+Objective Value			2.78234e+007			15.9106
+Root Mean Square			1318.7			0.997201
+Weight			1.62945e-014			3.47392e-013
+
+Fisher Information Matrix:
+  Matrix(5x5)
+	1.07613e+026	1.79106e+016	7.58928e-011	-1.90799e+008	0
+	1.79106e+016	2.98095e+006	5.2145e-027	-1.3586e-009	0
+	7.58928e-011	5.2145e-027	1.20363e-026	-6.02112e-010	0
+	-1.90799e+008	-1.3586e-009	-6.02112e-010	1.00643e+009	0
+	0	0	0	0	0
+
+FIM Eigenvalues:
+  Matrix(5x1)
+	-0.847171
+	0
+	0.847171
+	5.15396e+010
+	1.07613e+026
+
+FIM Eigenvectors corresponding to Eigenvalues:
+  Matrix(5x5)
+	1.17688e-010	-0.707107	-0.707107	3.2533e-011	0
+	0	0	0	0	1
+	-1.17688e-010	0.707107	-0.707107	-3.2533e-011	0
+	-1.07576e-016	-4.60086e-011	7.56256e-022	-1	0
+	-1	-1.66435e-010	1.18512e-027	1.07578e-016	0
+
+Fisher Information Matrix (scaled):
+  Matrix(5x5)
+	2.64906e+015	1.02437e+015	3.95995e-015	-0.000946652	0
+	1.02437e+015	3.96112e+014	6.32149e-022	-1.56612e-011	0
+	3.95995e-015	6.32149e-022	1.3312e-024	-6.33217e-015	0
+	-0.000946652	-1.56612e-011	-6.33217e-015	0.00100643	0
+	0	0	0	0	0
+
+FIM Eigenvalues (scaled):
+  Matrix(5x1)
+	-1.01008
+	0
+	0.00099907
+	0.0100866
+	3.04518e+015
+
+FIM Eigenvectors (scaled) corresponding to Eigenvalues:
+  Matrix(5x5)
+	0.234489	-0.6064	0.759799	0.000219545	0
+	0	0	0	0	1
+	0.00777431	-0.0201048	-0.0187339	0.999592	0
+	-0.273922	0.708376	0.649888	0.0285578	-0
+	-0.932696	-0.360664	-2.75136e-016	2.89947e-019	0
+
+Correlation Matrix:
+  Matrix(5x5)
+	1.#QNAN	1.#QNAN	1.#QNAN	1.#QNAN	1.#QNAN
+	1.#QNAN	1.#QNAN	1.#QNAN	1.#QNAN	1.#QNAN
+	1.#QNAN	1.#QNAN	1.#QNAN	1.#QNAN	1.#QNAN
+	1.#QNAN	1.#QNAN	1.#QNAN	1.#QNAN	1.#QNAN
+	1.#QNAN	1.#QNAN	1.#QNAN	1.#QNAN	1.#QNAN
+
+
+
